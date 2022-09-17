@@ -1,0 +1,32 @@
+a {
+  color: var(--white);
+  text-decoration: none;
+  transition: ease 0.3s;
+}
+
+a:hover,
+a:active {
+  color: var(--purple);
+}
+
+@each $weightSize, $weightLabel in $fontWeights {
+  .fw-#{$weightLabel} {
+    font-weight: #{$weightSize};
+  }
+}
+
+@each $size in $fontSizes {
+  .font-#{$size} {
+    font-size: #{$size}px;
+  }
+}
+
+@each $colorName, $colorHex in $colorsInHex {
+  .font-#{$colorName} {
+    color: #{$colorHex};
+  }
+
+  .bg-#{$colorName} {
+    background-color: #{$colorHex};
+  }
+}

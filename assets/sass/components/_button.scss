@@ -1,0 +1,22 @@
+button {
+  cursor: pointer;
+  transition: ease 0.3s;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.btn-#{$classPrefix}primary {
+  color: var(--white);
+  background-color: var(--purple);
+  border: 1px solid var(--purple) !important;
+}
+
+.btn-#{$classPrefix}primary:hover,
+.btn-#{$classPrefix}outline:hover {
+  color: var(--white);
+  background-color: var(--purple);
+  border: 1px solid var(--purple) !important;
+}

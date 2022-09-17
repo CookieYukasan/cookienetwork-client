@@ -1,0 +1,38 @@
+$classPrefix: "cn-";
+$fontSizes: 12, 14, 16, 24, 26, 36;
+$fontWeights: (
+  // 100: 'thin',
+  // 200: 'extra-light',
+  // 300: 'light',
+  400: "regular",
+  500: "medium",
+  600: "semibold",
+  700: "bold",
+  // 800: 'extra-bold',
+  900: "black"
+);
+
+$colorsInHex: (
+  "purple": #624add,
+
+  "white": #ffffff,
+  "red": #ff0000,
+
+  "grey-100": #7c8089,
+  "grey-200": #dee3ed,
+  "grey-300": #07080d,
+
+  // added to make the experimental dashboard
+  "grey-400": #9a9c9e,
+
+  "bg-dark": #07080d,
+);
+
+:root {
+  @each $key, $value in $colorsInHex {
+    --#{$key}: #{$value};
+  }
+}
+
+$borderRadiusSizes: 4;
+$marginAndPaddingSizes: 0, 4, 8, 12, 16, 24, 32, 40, 48, 80;

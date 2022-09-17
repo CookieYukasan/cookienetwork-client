@@ -1,0 +1,73 @@
+.ml-auto {
+  margin-left: auto;
+}
+
+.mr-auto {
+  margin-right: auto;
+}
+
+@each $size in $marginAndPaddingSizes {
+  // Margin
+
+  .m-#{$size} {
+    margin: #{$size}px !important;
+  }
+
+  .mtb-#{$size} {
+    margin-top: #{$size}px !important;
+    margin-bottom: #{$size}px !important;
+  }
+
+  .mb-#{$size} {
+    margin-bottom: #{$size}px !important;
+  }
+
+  .ml-#{$size} {
+    margin-left: #{$size}px !important;
+  }
+
+  .mr-#{$size} {
+    margin-right: #{$size}px !important;
+  }
+
+  .mt-#{$size} {
+    margin-top: #{$size}px !important;
+  }
+
+  .mrl-#{$size} {
+    margin-right: #{$size}px !important;
+    margin-left: #{$size}px !important;
+  }
+
+  // Padding
+
+  .p-#{$size} {
+    padding: #{$size}px !important;
+  }
+
+  .ptb-#{$size} {
+    padding-top: #{$size}px !important;
+    padding-bottom: #{$size}px !important;
+  }
+
+  .pb-#{$size} {
+    padding-bottom: #{$size}px !important;
+  }
+
+  .pl-#{$size} {
+    padding-left: #{$size}px !important;
+  }
+
+  .pr-#{$size} {
+    padding-right: #{$size}px !important;
+  }
+
+  .pt-#{$size} {
+    padding-top: #{$size}px !important;
+  }
+
+  .prl-#{$size} {
+    padding-right: #{$size}px !important;
+    padding-left: #{$size}px !important;
+  }
+}

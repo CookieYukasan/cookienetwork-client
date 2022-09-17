@@ -9,13 +9,21 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "@hcaptcha/vue-hcaptcha": "^0.3.2",
     "@nuxtjs/axios": "^5.13.6",
+    "@nuxtjs/device": "^2.1.0",
+    "@nuxtjs/proxy": "^2.1.0",
+    "bowser": "^2.11.0",
     "core-js": "^3.19.3",
     "nuxt": "^2.15.8",
+    "sass": "^1.54.3",
     "vue": "^2.6.14",
     "vue-server-renderer": "^2.6.14",
     "vue-template-compiler": "^2.6.14",
+    "vuelidate": "^0.7.7",
     "webpack": "^4.46.0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "sass-loader": "^10.3.1"
+  }
 }

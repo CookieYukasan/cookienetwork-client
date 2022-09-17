@@ -1,0 +1,6 @@
+@function color($name) {
+  @if not map-get($colorsInHex, $name + '') {
+    @error "Color `#{$name}` not found in map $colorsInHex";
+  }
+  @return var(--#{unquote($name)});
+}

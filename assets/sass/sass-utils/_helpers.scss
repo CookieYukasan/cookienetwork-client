@@ -1,0 +1,53 @@
+@keyframes bloopAnimation {
+  0% {
+    opacity: 0;
+    transform: scale(0.6) translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.bloop-animation {
+  animation-name: bloopAnimation;
+  animation-duration: 500ms;
+  animation-fill-mode: both;
+  animation-timing-function: ease-in-out;
+}
+
+.bg-unset {
+  background-color: unset !important;
+}
+
+.infinity-divider {
+  border-top: 1px solid var(--grey-300);
+  opacity: 1;
+}
+
+.service-priority-color {
+  width: 26px;
+  height: 26px;
+}
+
+.object-fit-cover {
+  object-fit: cover;
+}
+
+.w-200 {
+  width: 200px;
+}
+
+.cursor-pointer-disabled {
+  cursor: not-allowed;
+}
+
+/**
+ * Background Colors
+ **/
+
+@each $colorName, $colorHex in $colorsInHex {
+  .infinity-bg-#{$colorName} {
+    background-color: #{$colorHex};
+  }
+}

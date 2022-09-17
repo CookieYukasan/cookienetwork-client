@@ -1,0 +1,13 @@
+@use 'sass:map';
+
+@each $colorName, $colorHex in $colorsInHex {
+  .border-#{$colorName} {
+    border: 1px solid #{$colorHex};
+  }
+}
+
+@each $size in $borderRadiusSizes {
+  .br-#{$size} {
+    border-radius: #{$size}px;
+  }
+}

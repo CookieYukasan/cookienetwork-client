@@ -1,0 +1,18 @@
+input[type="email"],
+input[type="password"],
+input[type="text"],
+input[type="url"],
+input[type="number"],
+input[type="tel"] {
+  border: 2px solid var(--grey-200);
+
+  &:focus {
+    // box-shadow: 0 0 0 0.25rem var(--blue);
+    box-shadow: none;
+    border-color: var(--purple);
+  }
+
+  &:disabled {
+    opacity: 0.5;
+  }
+}
